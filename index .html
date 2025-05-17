@@ -12,13 +12,6 @@
     <div class="container">
       <h1 class="logo">Work Web by Anshuman<span>.</span></h1>
       <div class="toggle-btn" onclick="toggleMenu()">☰</div>
-<nav>
-  <ul class="nav-links">
-    <!-- nav items -->
-  </ul>
-</nav>
-
-      <div class="toggle-btn" onclick="toggleMenu()">☰</div>
       <nav>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
@@ -39,7 +32,7 @@
       <a href="#contact" class="btn">Contact Me</a>
     </div>
     <div class="hero-image" data-aos="fade-left">
-     
+      <!-- Optional: Image -->
     </div>
   </section>
 
@@ -91,15 +84,7 @@
   <script>
     AOS.init();
 
-    window.addEventListener('scroll', function () {
-      const header = document.getElementById('header');
-      if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
-
+    // Typewriter effect
     const textEl = document.querySelector(".typewriter-text");
     const text = "Hi, I'm Anshuman";
     let index = 0;
